@@ -1,0 +1,10 @@
+h1{
+   color:darkorange;
+   justify-content: center;
+   display: flex;
+   font-size: 5em;
+}
+
+body{
+    background-color: dodgerblue;
+}
