@@ -3,8 +3,14 @@ h1{
    justify-content: center;
    display: flex;
    font-size: 5em;
+   font-family:'pixel_font';
 }
 
 body{
     background-color: dodgerblue;
+}
+
+@font-face {
+    font-family: 'pixel_font';
+    src: url(fonts/pixel_font.ttf);
 }
