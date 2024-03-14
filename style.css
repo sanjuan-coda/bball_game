@@ -5,6 +5,14 @@ h1{
    font-size: 5em;
    font-family:'pixel_font';
 }
+h2{
+    color: darkorange;
+    justify-content: center;
+    display: flex;
+    font-family: 'pixel_font';
+    margin-top: 15em;
+    font-size: 32px;
+}
 
 body{
     background-color: dodgerblue;
