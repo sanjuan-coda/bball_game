@@ -21,6 +21,7 @@ body{
     height: 75px;
     justify-content: center;
     display: flex;
+    margin: auto;
 }
 .spatiebalk {
 	border-radius: 50%;
