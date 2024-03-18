@@ -8,12 +8,16 @@ console.log(gadoor)
 if (gadoor.code == "spatiebalk" ||   
     gadoor.keyCode == 32
     ) {
-    h1element.textContent = "f*ck it! we ball!"
+    h1element.textContent = "f*ck it! we ball! Double click!"
    }
  }
 
-if (h1element.textContent = "f*ck it! we ball!"){
-    setTimeout(function, milliseconds)
+document.ondblclick = function(laadscherm){
+console.log(laadscherm)
+if (h1element.textContent == "f*ck it! we ball!")
+setInterval((3000) => {
+    
+}, interval);
 }
 
 //document.querySelector('body').AddEventlistener('keydown' , function(event){
