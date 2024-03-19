@@ -4,6 +4,10 @@ const basketball_icon = document.querySelector(".basketball_icon");
 const h1element = document.querySelector("h1");
 const spatiebalk = document.querySelector(".spatiebalk");
 const loading = document.querySelector(".loading");
+const background = document.querySelector("body");
+let mySound = new Audio('music/the_crowd.mp3')
+
+background.classList.add("background")
 
 basketball_icon.style.visibility = "hidden";
 loading.style.visibility = "hidden";
@@ -33,7 +37,10 @@ function hideanswer() {
 function showgame() {
   basketball_icon.style.visibility = "hidden";
   loading.style.visibility = "hidden";
+  background.classList.add("background2")
+  mySound.play()
 }
+
 
 //document.ondblclick = function(laadscherm){
 //  console.log(laadscherm)
