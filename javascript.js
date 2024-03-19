@@ -19,7 +19,7 @@ document.body.onkeydown = function verder(gadoor) {
 function laadscherm() {
   basketball_icon.style.visibility = "hidden";
   loading.style.visibility = "hidden";
-  setTimeout(hideanswer, 3000);
+  setTimeout(hideanswer, 2000);
 }
 
 function hideanswer() {
@@ -27,7 +27,7 @@ function hideanswer() {
   loading.style.visibility = "visible";
   h1element.textContent = " ";
   spatiebalk.textContent = " ";
-  setTimeout(showgame, 3000)
+  setTimeout(showgame, 6000)
 }
 
 function showgame() {

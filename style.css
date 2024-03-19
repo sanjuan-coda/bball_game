@@ -39,8 +39,24 @@ body{
     font-family: 'pixel_font';
     color: darkorange;
     display: flex;
+    justify-content: center;
     font-size: 32px;
+   /* animation: loadingAni infinite 4s;*/
 }
+/*@keyframes loadingAni {
+    0% {
+        content: " ";
+    }
+    20%{
+        content: ".";
+    }
+    40%{
+        content: "..";
+    }
+    100%{
+        content: "...";
+    }
+}*/
 
 @keyframes rotate{
     0% {
@@ -59,7 +75,6 @@ body{
         -webkit-transform: rotate3d(0, 0, 1, 360deg);
     }
 } /* Met behulp van: https://codepen.io/kmathmann/pen/RaGqRr */
-
 
 @keyframes pulse {
 	0% {
