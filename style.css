@@ -35,6 +35,12 @@ body{
     font-size: 32px;
     margin-top: 6em;
 }
+.loading{
+    font-family: 'pixel_font';
+    color: darkorange;
+    display: flex;
+    font-size: 32px;
+}
 
 @keyframes rotate{
     0% {
