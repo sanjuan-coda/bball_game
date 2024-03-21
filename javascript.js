@@ -5,6 +5,9 @@ const h1element = document.querySelector("h1");
 const spatiebalk = document.querySelector(".spatiebalk");
 const loading = document.querySelector(".loading");
 const background = document.querySelector("body");
+const pijllinks = document.querySelector(".pijllinks");
+const pijlmid = document.querySelector(".pijlmid")
+const pijlrechts = document.querySelector(".pijlrechts");
 const buzzer = new Audio('music/buzzer.mp3');
 background.classList.add("background");
 
@@ -35,6 +38,9 @@ function hideanswer() {
   setTimeout(showgame, 6000)
 }
 
+pijllinks.style.visibility = "hidden";
+pijlmid.style.visibility = "hidden";
+pijlrechts.style.visibility = "hidden";
 
 function showgame() {
   basketball_icon.style.visibility = "hidden";
@@ -42,6 +48,9 @@ function showgame() {
   background.classList.add("background2")
   publiek.play()
   game.play()
+  pijllinks.style.visibility = "visible";
+  pijlmid.style.visibility = "visible";
+  pijlrechts.style.visibility = "visible";
 }
 
 

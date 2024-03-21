@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super basketball game</title>
-    <link rel="icon" type="image" href="images/bball_icon.png">
+    <link rel="icon" href="images/bball_icon.png">
     <link href= "style.css" rel="stylesheet">
 </head>
 <body>
+    <audio loop = "true" autoplay = "true" src="music/title_music.mp3"></audio>
     <h1>Janky BBall Game!!</h1>
     <img class="basketball_icon" src= "images/bball_icon.png" alt="rotating basketball">
     <div class="spatiebalk">Press spacebar to continue</div>
-    <div class="pijlmid" src="images/midarrow.png"></div>
-    <div class="pijllinks" src="images/left_arrow.png"></div>
-    <div class="pijlrechts" src="images/rightarrow.png"></div>
     <div class="loading"></div>
-    <audio loop = "true" autoplay = "true" src="music/title_music.mp3"></audio>
+    <section>
+    <img class="pijllinks" src="images/left_arrow.png" alt="pijlnaarlinks">
+    <img class="pijlmid" src="images/midarrow.png" alt="pijlnaarboven">
+    <img class="pijlrechts" src="images/rightarrow.png" alt="pijlnaarrechts">
+    </section>
     <script src="javascript.js"></script>
 </body>
 </html>

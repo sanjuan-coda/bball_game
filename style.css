@@ -38,10 +38,23 @@ h2{
     font-size: 2em;
     margin-top: 2em;
 }
-.player{
-    display: flex;
+.pijllinks{
+    width: 75px;
+    margin-left: 25em;
+    margin-top: 17em;
+    display: inline-flex;
+}
+.pijlmid{
+    width: 75px;
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+.pijlrechts{
+    width: 75px;
+    display: inline-flex;
     justify-content: right;
-    size: 10%;
 }
 .loading::after{
     font-family: 'pixel_font';
@@ -51,13 +64,6 @@ h2{
     font-size: 2em;
     content: "Loading"
     /*animation: loadingAni infinite 4s;*/
-}
-.pijllinks{
-}
-.pijlmid{
-
-}
-.pijlrechts{
 }
 /*@keyframes loadingAni {
     0% {
