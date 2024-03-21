@@ -5,8 +5,8 @@ const h1element = document.querySelector("h1");
 const spatiebalk = document.querySelector(".spatiebalk");
 const loading = document.querySelector(".loading");
 const background = document.querySelector("body");
-
-background.classList.add("background")
+const buzzer = new Audio('music/buzzer.mp3');
+background.classList.add("background");
 
 basketball_icon.style.visibility = "hidden";
 loading.style.visibility = "hidden";
@@ -18,7 +18,8 @@ document.body.onkeydown = function verder(gadoor) {
     laadscherm();
   }
 };
-
+const publiek = new Audio('music/the_crowd.mp3');
+const game = new Audio('music/gamesounds.mp3');
 function laadscherm() {
   basketball_icon.style.visibility = "hidden";
   loading.style.visibility = "hidden";
@@ -33,8 +34,7 @@ function hideanswer() {
   setTimeout(showgame, 6000)
 }
 
-const publiek = new Audio('music/the_crowd.mp3');
-const game = new Audio('music/gamesounds.mp3');
+
 function showgame() {
   basketball_icon.style.visibility = "hidden";
   loading.style.visibility = "hidden";
@@ -43,7 +43,7 @@ function showgame() {
   game.play()
 }
 
-const buzzer = new Audio('music/buzzer.mp3');
+
 
 //document.ondblclick = function(laadscherm){
 //  console.log(laadscherm)
