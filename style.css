@@ -38,6 +38,11 @@ h2{
     font-size: 32px;
     margin-top: 6em;
 }
+.player{
+    display: flex;
+    justify-content: right;
+    size: 10%;
+}
 .loading::after{
     font-family: 'pixel_font';
     color: darkorange;
@@ -45,7 +50,7 @@ h2{
     justify-content: center;
     font-size: 2em;
     content: "Loading"
-    animation: loadingAni infinite 4s;
+    /*animation: loadingAni infinite 4s;*/
 }
 .pijllinks{
     display: flex;
@@ -55,7 +60,7 @@ h2{
     display: flex;
     justify-content: right;
 }
-@keyframes loadingAni {
+/*@keyframes loadingAni {
     0% {
         content: "Loading";
     }
@@ -68,7 +73,7 @@ h2{
     100%{
         content: "Loading...";
     }
-}
+}*/
 
 @keyframes rotate{
     0% {
