@@ -18,14 +18,15 @@ document.body.onkeydown = function verder(gadoor) {
     laadscherm();
   }
 };
-const publiek = new Audio('music/the_crowd.mp3');
-const game = new Audio('music/gamesounds.mp3');
+
 function laadscherm() {
   basketball_icon.style.visibility = "hidden";
   loading.style.visibility = "hidden";
   setTimeout(hideanswer, 2000);
 }
 
+const publiek = new Audio('music/the_crowd.mp3');
+const game = new Audio('music/gamesounds.mp3');
 function hideanswer() {
   basketball_icon.style.visibility = "visible";
   loading.style.visibility = "visible";
