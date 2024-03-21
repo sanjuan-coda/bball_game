@@ -39,20 +39,20 @@ h2{
     margin-top: 2em;
 }
 .pijllinks{
-    width: 75px;
+    width: 95px;
     margin-left: 25em;
-    margin-top: 17em;
+    margin-top: 10em;
     display: inline-flex;
 }
 .pijlmid{
-    width: 75px;
+    width: 95px;
     display: inline-flex;
     justify-content: center;
     margin-left: 5em;
     margin-right: 5em;
 }
 .pijlrechts{
-    width: 75px;
+    width: 95px;
     display: inline-flex;
     justify-content: right;
 }
