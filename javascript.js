@@ -5,7 +5,7 @@ const h1element = document.querySelector("h1");
 const spatiebalk = document.querySelector(".spatiebalk");
 const loading = document.querySelector(".loading");
 const background = document.querySelector("body");
-let mySound = new Audio('music/the_crowd.mp3')
+let mySound = new Audio('music/the_crowd.mp3');
 
 background.classList.add("background")
 

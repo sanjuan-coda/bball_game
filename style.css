@@ -38,13 +38,14 @@ h2{
     font-size: 32px;
     margin-top: 6em;
 }
-.loading{
+.loading::after{
     font-family: 'pixel_font';
     color: darkorange;
     display: flex;
     justify-content: center;
-    font-size: 32px;
-   /* animation: loadingAni infinite 4s;*/
+    font-size: 2em;
+    content: "Loading"
+    animation: loadingAni infinite 4s;
 }
 .pijllinks{
     display: flex;
@@ -54,20 +55,20 @@ h2{
     display: flex;
     justify-content: right;
 }
-/*@keyframes loadingAni {
+@keyframes loadingAni {
     0% {
-        content: " ";
+        content: "Loading";
     }
     20%{
-        content: ".";
+        content: "Loading.";
     }
     40%{
-        content: "..";
+        content: "Loading..";
     }
     100%{
-        content: "...";
+        content: "Loading...";
     }
-}*/
+}
 
 @keyframes rotate{
     0% {
