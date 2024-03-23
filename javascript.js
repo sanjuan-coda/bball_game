@@ -1,5 +1,5 @@
 console.log("NY Knicks Nation");
-
+const titlemusic = new Audio("music/title_music.mp3");
 const basketball_icon = document.querySelector(".basketball_icon");
 const h1element = document.querySelector("h1");
 const spatiebalk = document.querySelector(".spatiebalk");
@@ -10,9 +10,11 @@ const pijlmid = document.querySelector(".pijlmid");
 const pijlrechts = document.querySelector(".pijlrechts");
 const basketball = document.querySelector(".basketball");
 const buzzer = new Audio("music/buzzer.mp3");
+const awkward = new Audio("music/awkward.mp3");
+
 
 background.classList.add("background");
-
+titlemusic.play()
 basketball_icon.style.visibility = "hidden";
 loading.style.visibility = "hidden";
 basketball.style.visibility = "hidden";
@@ -74,15 +76,16 @@ function courtmid() {
   let randomnumberMid = Math.round(Math.random() * 2);
   if (randomnumberMid < 2) {
     win();
-    stop();
   } else {
     lose();
-    stop();
   }
 }
-
+function reload(){
+  location.reload()
+}
 function stop(){
   game.pause();
+  titlemusic.pause()
   publiek.pause();
   buzzer.play();
 }
@@ -91,6 +94,8 @@ function win() {
   pijlmid.style.visibility = "hidden";
   pijllinks.style.visibility = "hidden";
   pijlrechts.style.visibility = "hidden";
+  stop();
+  setTimeout(reload, 10000);
 }
 
 function lose() {
@@ -98,4 +103,7 @@ function lose() {
   pijlmid.style.visibility = "hidden";
   pijllinks.style.visibility = "hidden";
   pijlrechts.style.visibility = "hidden";
+  stop();
+  awkward.play()
+  setTimeout(reload, 11000);
 }
