@@ -1,5 +1,5 @@
 console.log("NY Knicks Nation");
-const titlemusic = new Audio("music/title_music.mp3");
+const titlemusic = new Audio("music/title_music.mp3");//bron: street fighter II: Guiles Theme
 const basketball_icon = document.querySelector(".basketball_icon");
 const h1element = document.querySelector("h1");
 const spatiebalk = document.querySelector(".spatiebalk");
@@ -10,7 +10,8 @@ const pijlmid = document.querySelector(".pijlmid");
 const pijlrechts = document.querySelector(".pijlrechts");
 const basketball = document.querySelector(".basketball");
 const buzzer = new Audio("music/buzzer.mp3");
-const awkward = new Audio("music/awkward.mp3");
+const awkward = new Audio("music/awkward.mp3");// bron:https://www.youtube.com/watch?v=CpGtBnVZLSk
+const yay = new Audio("music/yay.mp3"); //bron: https://youtu.be/barWV7RWkq0?feature=shared
 
 
 background.classList.add("background");
@@ -94,8 +95,9 @@ function win() {
   pijlmid.style.visibility = "hidden";
   pijllinks.style.visibility = "hidden";
   pijlrechts.style.visibility = "hidden";
+  yay.play()
   stop();
-  setTimeout(reload, 10000);
+  setTimeout(reload, 70000);
 }
 
 function lose() {
