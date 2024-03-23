@@ -97,7 +97,7 @@ function win() {
   pijlrechts.style.visibility = "hidden";
   yay.play()
   stop();
-  setTimeout(reload, 70000);
+  setTimeout(reload, 7000);
 }
 
 function lose() {
