@@ -1,3 +1,11 @@
+:root{
+    --background-color: dodgerblue;
+}
+
+body{
+    background-color: var(--background-color); 
+}
+
 h1{
    color:darkorange;
    justify-content: center;
@@ -13,11 +21,14 @@ h2{
     margin-top: 1em;
     font-size: 3em;
 }
-.background{
-    background-color: dodgerblue;
-}
 .background2{
     background-image: url("images/court_image.jpg");
+}
+.backgroundlose{
+    background-image: url("images/lose.jpg");
+}
+.backgroundwin{
+    background-image: url("images/win.jpg");
 }
 .basketball_icon{
     width: 75px;
@@ -27,6 +38,13 @@ h2{
     margin: auto;
     animation: rotate 4s infinite;
     margin-top: 5em;
+}
+.basketball {
+    background-color: aquamarine;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    /*animation: throw 10s linear;*/
 }
 .spatiebalk {
 	border-radius: 50%;
@@ -56,6 +74,7 @@ h2{
     display: inline-flex;
     justify-content: right;
 }
+
 .loading::after{
     font-family: 'pixel_font';
     color: darkorange;
@@ -64,6 +83,17 @@ h2{
     font-size: 2em;
     content: "Loading"
     /*animation: loadingAni infinite 4s;*/
+}
+@keyframes throw{
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 30%;
+    }
+    100%{
+        opacity: 100%;
+    }
 }
 /*@keyframes loadingAni {
     0% {
