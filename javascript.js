@@ -8,7 +8,6 @@ const background = document.querySelector("body");
 const pijllinks = document.querySelector(".pijllinks");
 const pijlmid = document.querySelector(".pijlmid");
 const pijlrechts = document.querySelector(".pijlrechts");
-const basketball = document.querySelector(".basketball");
 const buzzer = new Audio("music/buzzer.mp3");
 const awkward = new Audio("music/awkward.mp3");// bron:https://www.youtube.com/watch?v=CpGtBnVZLSk
 const yay = new Audio("music/yay.mp3"); //bron: https://youtu.be/barWV7RWkq0?feature=shared
@@ -18,7 +17,6 @@ background.classList.add("background");
 titlemusic.play()
 basketball_icon.style.visibility = "hidden";
 loading.style.visibility = "hidden";
-basketball.style.visibility = "hidden";
 
 document.body.onkeydown = function verder(gadoor) {
   console.log(gadoor);
@@ -33,7 +31,7 @@ function laadscherm() {
   loading.style.visibility = "hidden";
   setTimeout(hideanswer, 2000);
 }
-
+const swish = new Audio("music/swish.mp3"); //Bron: https://youtu.be/snctOXOfS0M?si=c-esE4Kl_ai77yFO
 const publiek = new Audio("music/the_crowd.mp3");
 const game = new Audio("music/gamesounds.mp3");
 function hideanswer() {
@@ -54,6 +52,7 @@ function showgame() {
   background.classList.add("background2");
   publiek.play();
   game.play();
+  h1element.textContent = "the last chance! pick a side";
   pijllinks.style.visibility = "visible";
   pijlmid.style.visibility = "visible";
   pijlrechts.style.visibility = "visible";
@@ -68,17 +67,17 @@ console.log(randomnumberMid);
 function courtLR() {
   let randomnumberLR = Math.round(Math.random() * 8);
   if (randomnumberLR < 3) { 
-    win();
+    setTimeout(win, 3000);
   } else {
-     lose();
+    setTimeout(lose, 3000);
   }
 }
 function courtmid() {
   let randomnumberMid = Math.round(Math.random() * 2);
   if (randomnumberMid < 2) {
-    win();
+    setTimeout(win, 3000);
   } else {
-    lose();
+    setTimeout(lose, 3000);
   }
 }
 function reload(){
@@ -91,16 +90,19 @@ function stop(){
   buzzer.play();
 }
 function win() {
+  swish.play()
+  yay.play()
+  h1element.textContent = "you did it! the crowd goes wild! 3 points!";
   background.classList.add("backgroundwin");
   pijlmid.style.visibility = "hidden";
   pijllinks.style.visibility = "hidden";
   pijlrechts.style.visibility = "hidden";
-  yay.play()
   stop();
-  setTimeout(reload, 7000);
+  setTimeout(reload, 6000);
 }
 
 function lose() {
+  h1element.textContent = "you missed shieeeeettt that's awkward";
   background.classList.add("backgroundlose");
   pijlmid.style.visibility = "hidden";
   pijllinks.style.visibility = "hidden";
