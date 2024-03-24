@@ -67,17 +67,17 @@ console.log(randomnumberMid);
 function courtLR() {
   let randomnumberLR = Math.round(Math.random() * 8);
   if (randomnumberLR < 3) { 
-    setTimeout(win, 3000);
+    win()
   } else {
-    setTimeout(lose, 3000);
+    lose()
   }
 }
 function courtmid() {
   let randomnumberMid = Math.round(Math.random() * 2);
   if (randomnumberMid < 2) {
-    setTimeout(win, 3000);
+    win()
   } else {
-    setTimeout(lose, 3000);
+    lose()
   }
 }
 function reload(){
